@@ -1,10 +1,10 @@
 ---
-title: DCP Build Status
+title: DCP Status
 ---
-# Build Status
+# Data Coordination Platform Status
 
-| System | Stage | Status |
-|-----|--------|----------|
+| System | Stage | Build Status |
+|-----|--------|----------------|
 | DCP | `integration` | ![https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/commits/integration](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/badges/integration/build.svg)|
 | | `staging`| ![https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/commits/staging](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/badges/staging/build.svg)|
 | Upload | `dev` | ![https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/master](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/badges/master/build.svg) |
