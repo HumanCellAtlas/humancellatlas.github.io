@@ -5,6 +5,16 @@
     <title>HCA DCP: DCP Status</title>
     <link rel="stylesheet" href="/stylesheet.css">
 
+    <!-- Gobal site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116656225-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116656225-2');
+    </script>
+
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc 4.9.2">
   </head>
@@ -34,6 +44,12 @@
       <td> </td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/dcp/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/dcp/prod.svg" alt="" /></a></td>
+      <td> </td>
+    </tr>
+    <tr>
       <td>Upload</td>
       <td><code>dev</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/master.svg" alt="" /></a></td>
@@ -50,6 +66,12 @@
       <td><code>staging</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/staging"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/staging.svg" alt="" /></a></td>
       <td><img src="https://status.dev.data.humancellatlas.org/service/upload-health-check-staging.svg" alt="" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/upload-service/prod.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/upload-health-check-prod.svg" alt="" /></td>
     </tr>
     <tr>
       <td>Data Storage</td>
@@ -70,6 +92,12 @@
       <td><img src="https://status.dev.data.humancellatlas.org/service/dss-health-check-staging.svg" alt="" /></td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/data-store/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/data-store/prod.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/dss-health-check-prod.svg" alt="" /></td>
+    </tr>
+    <tr>
       <td>Lira</td>
       <td><code>dev</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/lira/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/lira/master.svg" alt="" /></a></td>
@@ -88,16 +116,34 @@
       <td><img src="https://status.dev.data.humancellatlas.org/service/analysis-health-check-staging.svg" alt="" /></td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/lira/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/lira/prod.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/analysis-health-check-prod.svg" alt="" /></td>
+    </tr>
+    <tr>
       <td>Logs</td>
-      <td><code>account</code></td>
+      <td><code>hca</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/logs/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/logs/master.svg" alt="" /></a></td>
       <td><img src="https://status.dev.data.humancellatlas.org/service/logs-health-check-dev.svg" alt="" /></td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>hca-prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/logs/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/logs/master.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/logs-health-check-prod.svg" alt="" /></td>
+    </tr>
+    <tr>
       <td>Metrics</td>
-      <td><code>account</code></td>
+      <td><code>hca</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/metrics/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/metrics/master.svg" alt="" /></a></td>
       <td><img src="https://status.dev.data.humancellatlas.org/service/metrics-health-check-dev.svg" alt="" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code>hca-prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/metrics/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/metrics/master.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/metrics-health-check-prod.svg" alt="" /></td>
     </tr>
   </tbody>
 </table>
@@ -147,6 +193,12 @@ setInterval(function() {
       <td> </td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/dcp/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/dcp/prod.svg" alt="" /></a></td>
+      <td> </td>
+    </tr>
+    <tr>
       <td>Upload</td>
       <td><code>dev</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/master.svg" alt="" /></a></td>
@@ -163,6 +215,12 @@ setInterval(function() {
       <td><code>staging</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/staging"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/staging.svg" alt="" /></a></td>
       <td><img src="https://status.dev.data.humancellatlas.org/service/upload-health-check-staging.svg" alt="" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/upload-service/prod.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/upload-health-check-prod.svg" alt="" /></td>
     </tr>
     <tr>
       <td>Data Storage</td>
@@ -183,6 +241,12 @@ setInterval(function() {
       <td><img src="https://status.dev.data.humancellatlas.org/service/dss-health-check-staging.svg" alt="" /></td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/data-store/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/data-store/prod.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/dss-health-check-prod.svg" alt="" /></td>
+    </tr>
+    <tr>
       <td>Lira</td>
       <td><code>dev</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/lira/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/lira/master.svg" alt="" /></a></td>
@@ -201,16 +265,34 @@ setInterval(function() {
       <td><img src="https://status.dev.data.humancellatlas.org/service/analysis-health-check-staging.svg" alt="" /></td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/lira/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/lira/prod.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/analysis-health-check-prod.svg" alt="" /></td>
+    </tr>
+    <tr>
       <td>Logs</td>
-      <td><code>account</code></td>
+      <td><code>hca</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/logs/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/logs/master.svg" alt="" /></a></td>
       <td><img src="https://status.dev.data.humancellatlas.org/service/logs-health-check-dev.svg" alt="" /></td>
     </tr>
     <tr>
+      <td> </td>
+      <td><code>hca-prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/logs/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/logs/master.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/logs-health-check-prod.svg" alt="" /></td>
+    </tr>
+    <tr>
       <td>Metrics</td>
-      <td><code>account</code></td>
+      <td><code>hca</code></td>
       <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/metrics/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/metrics/master.svg" alt="" /></a></td>
       <td><img src="https://status.dev.data.humancellatlas.org/service/metrics-health-check-dev.svg" alt="" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code>hca-prod</code></td>
+      <td><a href="https://allspark.data.humancellatlas.org/HumanCellAtlas/metrics/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/metrics/master.svg" alt="" /></a></td>
+      <td><img src="https://status.data.humancellatlas.org/service/metrics-health-check-prod.svg" alt="" /></td>
     </tr>
   </tbody>
 </table>
