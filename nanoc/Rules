@@ -9,7 +9,7 @@ end
 # is not bundled with Nanoc or Ruby.
 
 compile '/**/*.md' do
-  filter :kramdown
+  filter :kramdown, parse_block_html: true, parse_span_html: true
   layout '/default.*'
 end
 
