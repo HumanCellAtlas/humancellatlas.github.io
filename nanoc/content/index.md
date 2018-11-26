@@ -4,15 +4,28 @@ title: DCP Status
 # Data Coordination Platform: Status
 
 <table>
+<tr><th>DCP</th></tr>
+<tr><td markdown="1">
+
+| System | Stage | Build Status |
+|--------|-------|--------------|
+| DCP    | `integration` | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/dcp/integration.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/commits/integration) |
+|        | `staging`     | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/dcp/staging.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/commits/staging)         |
+|        | `prod`        | [![](https://status.data.humancellatlas.org/build/HumanCellAtlas/dcp/prod.svg)](https://allspark.data.humancellatlas.org/HumanCellAtlas/dcp/commits/prod)                       |
+
+</td></tr> </table>
+
+
+<table>
 <tr><th>DCP Components</th><th>DCP Components</th></tr>
 <tr><td markdown="1">
 
 | System | Stage | Build Status | System Status | System Availability (30 days) |
 |--------|-------|--------------|---------------|-------------------------------|
-| DCP          | `integration` | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/dcp/integration.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/commits/integration) | | |
-|              | `staging`     | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/dcp/staging.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/dcp/commits/staging)         | | |
-|              | `prod`        | [![](https://status.data.humancellatlas.org/build/HumanCellAtlas/dcp/prod.svg)](https://allspark.data.humancellatlas.org/HumanCellAtlas/dcp/commits/prod)                       | | |
-||||||
+| Ingest       | `dev`         | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/ingest/master.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/ingest/commits/master)                           | ![](https://status.dev.data.humancellatlas.org/service/ingest-health-check-dev.svg)           | ![](https://status.dev.data.humancellatlas.org/availability/ingest-health-check-dev.svg)           |
+|              | `integration` | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/ingest/integration.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/ingest/commits/integration)                 | ![](https://status.dev.data.humancellatlas.org/service/ingest-health-check-integration.svg)   | ![](https://status.dev.data.humancellatlas.org/availability/ingest-health-check-integration.svg)   |
+|              | `staging`     | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/ingest/staging.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/ingest/commits/staging)                         | ![](https://status.dev.data.humancellatlas.org/service/ingest-health-check-staging.svg)       | ![](https://status.dev.data.humancellatlas.org/availability/ingest-health-check-staging.svg)       |
+|              | `prod`        | [![](https://status.data.humancellatlas.org/build/HumanCellAtlas/ingest/prod.svg)](https://allspark.data.humancellatlas.org/HumanCellAtlas/ingest/commits/prod)                                       | ![](https://status.data.humancellatlas.org/service/ingest-health-check-prod.svg)              | ![](https://status.data.humancellatlas.org/availability/ingest-health-check-prod.svg)              |
 | Upload       | `dev`         | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/master.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/master)           | ![](https://status.dev.data.humancellatlas.org/service/upload-health-check-dev.svg)           | ![](https://status.dev.data.humancellatlas.org/availability/upload-health-check-dev.svg)           |
 |              | `integration` | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/integration.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/integration) | ![](https://status.dev.data.humancellatlas.org/service/upload-health-check-integration.svg)   | ![](https://status.dev.data.humancellatlas.org/availability/upload-health-check-integration.svg)   |
 |              | `staging`     | [![](https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/upload-service/staging.svg)](https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/staging)         | ![](https://status.dev.data.humancellatlas.org/service/upload-health-check-staging.svg)       | ![](https://status.dev.data.humancellatlas.org/availability/upload-health-check-staging.svg)       |
@@ -48,6 +61,7 @@ title: DCP Status
 |                | `hca-prod`    | [![](https://status.data.humancellatlas.org/build/HumanCellAtlas/logs/master.svg)](https://allspark.data.humancellatlas.org/HumanCellAtlas/logs/commits/master)                                       | ![](https://status.data.humancellatlas.org/service/logs-health-check-prod.svg)                    | ![](https://status.data.humancellatlas.org/availability/logs-health-check-prod.svg)                    |
 
 </td></tr> </table>
+
 
 *Last updated at <span id="timestamp">_</span>. Refreshing in two minutes...*
 
