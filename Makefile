@@ -17,3 +17,4 @@ site:
 		mkdir -p projects/$$p; \
 		python3 build_index_html.py --project-filter $$p > projects/$$p/index.html; \
 	done
+	python3 build_index_html.py > ./index.html; \
