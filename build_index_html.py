@@ -10,14 +10,14 @@ status_apis = {
     'dev': 'https://status.dev.data.humancellatlas.org',
     'integration': 'https://status.dev.data.humancellatlas.org',
     'staging': 'https://status.dev.data.humancellatlas.org',
-    'prod': 'https://status.data.humancellatlas.org'
+    'prod': 'https://status.data.humancellatlas.org',
 }
 
 build_servers = {
     'dev': 'https://allspark.dev.data.humancellatlas.org',
     'integration': 'https://allspark.dev.data.humancellatlas.org',
     'staging': 'https://allspark.dev.data.humancellatlas.org',
-    'prod': 'https://allspark-prod.data.humancellatlas.org'
+    'prod': 'https://allspark-prod.data.humancellatlas.org',
 }
 
 NAME = sys.argv[0].split('/')[-1]

@@ -32,6 +32,21 @@
       ]
     },
     {
+      "system_name": "Metadata Schema",
+      "group": "HumanCellAtlas",
+      "repo": "metadata-schema",
+      "environments": [
+        {
+          "name": "prod",
+          "branch": "master",
+          "ci_cd_server": null,
+          "health_check_endpoint": "https://schema.humancellatlas.org/health",
+          "metrics_url": null,
+          "health_check_id": "metadata-schema-health-check-prod"
+        }
+      ]
+    },
+    {
       "system_name": "Ingest",
       "group": "HumanCellAtlas",
       "repo": "ingest-core",
