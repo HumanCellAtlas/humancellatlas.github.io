@@ -38,6 +38,13 @@ CLI.add_argument(
     required=False,
     help="Filter by project's repo short link"
 )
+CLI.add_argument(
+    '--owner-filter',
+    dest="owner_filter",
+    type=str,
+    required=False,
+    help="Filter by project's owner"
+)
 
 
 if __name__ == '__main__':
@@ -52,13 +59,14 @@ if __name__ == '__main__':
     headers = [
         dict(cells=('System Name', 'Environment', 'Build Status', 'Status', 'Availability (30 day)', 'Metrics'))
     ]
-    environments = []
+    rows = []
     for s in entries['systems']:
-        environments += [
+        rows += [
             dict(
                 name=s['system_name'],
                 repo=s['repo'],
                 env=e['name'],
+                owner=s['owner'],
                 ci_cd_url=f"{build_servers[e['name']]}/{s['group']}/{s['repo']}/commits/{e['branch']}",
                 build_status_image=f"{status_apis[e['name']]}/build/{s['group']}/{s['repo']}/{e['branch']}.svg",
                 health_check_endpoint=e['health_check_endpoint'],
@@ -71,18 +79,22 @@ if __name__ == '__main__':
 
     title_parts = []
     if options.project_filter:
-        environments = [d for d in environments if d['repo'] == options.project_filter]
+        rows = [d for d in rows if d['repo'] == options.project_filter]
         title_parts.append(f"{options.project_filter} project")
 
     if options.environment_filter:
-        environments = [d for d in environments if d['env'] == options.environment_filter]
+        rows = [d for d in rows if d['env'] == options.environment_filter]
         title_parts.append(f"{options.environment_filter} environment")
+
+    if options.owner_filter:
+        rows = [d for d in rows if d['owner'] == options.owner_filter]
+        title_parts.append(f"{options.owner_filter}'s projects")
 
     template = Template(template_str)
     print(
         template.render(
-            title=', '.join(title_parts) if len(title_parts) else 'all projects and environments',
-            headers=headers, deployments=environments
+            title=', '.join(title_parts) if len(title_parts) else '*',
+            headers=headers, rows=rows
         )
     )
 

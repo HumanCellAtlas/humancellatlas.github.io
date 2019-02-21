@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HCA DCP: DCP Status</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- Gobal site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116656225-2"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-116656225-2', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+
+        var setDatetime = function() {
+            var n = new Date().toISOString();
+            document.getElementById("timestamp").innerText = n;
+        };
+
+        window.onload = setDatetime;
+
+        setInterval(function() {
+                window.location.reload();
+            },
+            2*60000
+        );
+    </script>
+</head>
+<body>
+<h1>Data Coordination Platform status: <em>ebi's projects</em></h1>
+
+<table>
+    <thead>
+        
+            <tr>
+                
+                    <th>System Name</th>
+                
+                    <th>Environment</th>
+                
+                    <th>Build Status</th>
+                
+                    <th>Status</th>
+                
+                    <th>Availability (30 day)</th>
+                
+                    <th>Metrics</th>
+                
+            </tr>
+        
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td><code>Metadata Schema</code></td>
+                <td><code>prod</code></td>
+                <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/metadata-schema/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/metadata-schema/master.svg" /></a></td>
+                <td><a href="https://schema.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/service/metadata-schema-health-check-prod.svg" /></a></td>
+                <td><a href="https://schema.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/availability/metadata-schema-health-check-prod.svg" /></a></td>
+                <td>
+                    
+                        ❌
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Ingest</code></td>
+                <td><code>dev</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/ingest-core/commits/None"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/ingest-core/None.svg" /></a></td>
+                <td><a href="http://api.ingest.dev.data.humancellatlas.org/health"><img src="https://status.dev.data.humancellatlas.org/service/ingest-health-check-dev.svg" /></a></td>
+                <td><a href="http://api.ingest.dev.data.humancellatlas.org/health"><img src="https://status.dev.data.humancellatlas.org/availability/ingest-health-check-dev.svg" /></a></td>
+                <td>
+                    
+                        ❌
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Ingest</code></td>
+                <td><code>integration</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/ingest-core/commits/None"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/ingest-core/None.svg" /></a></td>
+                <td><a href="http://api.ingest.integration.data.humancellatlas.org/health"><img src="https://status.dev.data.humancellatlas.org/service/ingest-health-check-integration.svg" /></a></td>
+                <td><a href="http://api.ingest.integration.data.humancellatlas.org/health"><img src="https://status.dev.data.humancellatlas.org/availability/ingest-health-check-integration.svg" /></a></td>
+                <td>
+                    
+                        ❌
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Ingest</code></td>
+                <td><code>staging</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/ingest-core/commits/None"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/ingest-core/None.svg" /></a></td>
+                <td><a href="http://api.ingest.staging.data.humancellatlas.org/health"><img src="https://status.dev.data.humancellatlas.org/service/ingest-health-check-staging.svg" /></a></td>
+                <td><a href="http://api.ingest.staging.data.humancellatlas.org/health"><img src="https://status.dev.data.humancellatlas.org/availability/ingest-health-check-staging.svg" /></a></td>
+                <td>
+                    
+                        ❌
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Ingest</code></td>
+                <td><code>prod</code></td>
+                <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/ingest-core/commits/None"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/ingest-core/None.svg" /></a></td>
+                <td><a href="http://api.ingest.data.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/service/ingest-health-check-prod.svg" /></a></td>
+                <td><a href="http://api.ingest.data.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/availability/ingest-health-check-prod.svg" /></a></td>
+                <td>
+                    
+                        ❌
+                    
+                </td>
+            </tr>
+        
+    </tbody>
+</table>
+
+<p><em>Last updated at <span id="timestamp">_</span>. Refreshing in two minutes…</em></p>
+
+</body>
+</html>

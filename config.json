@@ -4,6 +4,7 @@
       "system_name": "DCP",
       "group": "HumanCellAtlas",
       "repo": "dcp",
+      "owner": "hca",
       "environments": [
         {
           "name": "integration",
@@ -35,6 +36,7 @@
       "system_name": "Metadata Schema",
       "group": "HumanCellAtlas",
       "repo": "metadata-schema",
+      "owner": "ebi",
       "environments": [
         {
           "name": "prod",
@@ -50,6 +52,7 @@
       "system_name": "Ingest",
       "group": "HumanCellAtlas",
       "repo": "ingest-core",
+      "owner": "ebi",
       "environments": [
         {
           "name": "dev",
@@ -89,6 +92,7 @@
       "system_name": "Upload",
       "group": "HumanCellAtlas",
       "repo": "upload-service",
+      "owner": "czi",
       "environments": [
         {
           "name": "dev",
@@ -128,6 +132,7 @@
       "system_name": "Data Storage",
       "group": "HumanCellAtlas",
       "repo": "data-store",
+      "owner": "ucsc",
       "environments": [
         {
           "name": "dev",
@@ -167,6 +172,7 @@
       "system_name": "Analysis (Lira)",
       "group": "HumanCellAtlas",
       "repo": "lira",
+      "owner": "broad",
       "environments": [
         {
           "name": "dev",
@@ -206,6 +212,7 @@
       "system_name": "Data Portal",
       "group": "HumanCellAtlas",
       "repo": "data-portal",
+      "owner": "ucsc",
       "environments": [
         {
           "name": "dev",
@@ -245,6 +252,7 @@
       "system_name": "Data Browser",
       "group": "HumanCellAtlas",
       "repo": "data-browser",
+      "owner": "ucsc",
       "environments": [
         {
           "name": "dev",
@@ -284,6 +292,7 @@
       "system_name": "Matrix",
       "group": "HumanCellAtlas",
       "repo": "matrix-service",
+      "owner": "czi",
       "environments": [
         {
           "name": "dev",
@@ -323,6 +332,7 @@
       "system_name": "Metrics",
       "group": "HumanCellAtlas",
       "repo": "metrics",
+      "owner": "czi",
       "environments": [
         {
           "name": "dev",
@@ -346,6 +356,7 @@
       "system_name": "Logs",
       "group": "HumanCellAtlas",
       "repo": "logs",
+      "owner": "czi",
       "environments": [
         {
           "name": "dev",
