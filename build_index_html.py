@@ -47,6 +47,6 @@ if __name__ == '__main__':
     if env_filter:
         deployments = [d for d in deployments if d['env'] == env_filter]
     template = Template(template_str)
-    print(template.render(headers=headers, deployments=deployments))
+    print(template.render(environments=f"{env_filter} deployment" if env_filter else 'all deployments', headers=headers, deployments=deployments))
 
 
