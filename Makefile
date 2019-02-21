@@ -1,12 +1,23 @@
+ENVIRONMENTS := dev integration staging prod
+
 default: site
 
 .PHONY: clean
 clean:
 	git clean -fd
-	find . | egrep -v '^[.]|[.][.]|[.]/LICENSE[.]txt|[.]/Makefile|[.]/README.md|[.]/nanoc|[.]git$$' | xargs rm -r
+
+.PHONY: target
+target:
+	mkdir -p $(ENVIRONMENT)
+
+.PHONY: page
+page:
+	python3 build_index_html.py $(ENVIRONMENT) > $(ENVIRONMENT_DIR)/index.html
 
 .PHONY: site
 site:
-	cd nanoc && nanoc
-	cp -r nanoc/output/* ./
-
+	for e in $(ENVIRONMENTS); do \
+		$(MAKE) target ENVIRONMENT=$$e; \
+		$(MAKE) page ENVIRONMENT=$$e ENVIRONMENT_DIR=./$$e; \
+	done
+	$(MAKE) page ENVIRONMENT=$$e ENVIRONMENT_DIR='.'; \
