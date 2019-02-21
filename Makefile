@@ -1,4 +1,5 @@
 ENVIRONMENTS := dev integration staging prod
+PROJECTS := $(shell jq -r '.systems[] | .repo' config.json)
 
 default: site
 
@@ -6,18 +7,13 @@ default: site
 clean:
 	git clean -fd
 
-.PHONY: target
-target:
-	mkdir -p $(ENVIRONMENT)
-
-.PHONY: page
-page:
-	python3 build_index_html.py $(ENVIRONMENT) > $(ENVIRONMENT_DIR)/index.html
-
 .PHONY: site
 site:
 	for e in $(ENVIRONMENTS); do \
-		$(MAKE) target ENVIRONMENT=$$e; \
-		$(MAKE) page ENVIRONMENT=$$e ENVIRONMENT_DIR=./$$e; \
+		mkdir -p environments/$$e; \
+		python3 build_index_html.py --environment-filter $$e > environments/$$e/index.html; \
 	done
-	$(MAKE) page ENVIRONMENT=$$e ENVIRONMENT_DIR='.'; \
+	for p in $(PROJECTS); do \
+		mkdir -p projects/$$p; \
+		python3 build_index_html.py --project-filter $$p > projects/$$p/index.html; \
+	done

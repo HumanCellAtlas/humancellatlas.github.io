@@ -1,3 +1,4 @@
+import argparse
 import json
 import random
 import sys
@@ -17,9 +18,29 @@ build_servers = {
     'prod': 'https://allspark-prod.data.humancellatlas.org'
 }
 
+NAME = sys.argv[0].split('/')[-1]
+CLI = argparse.ArgumentParser(
+    description=f"`{NAME}` is a tool for generating HCA DCP status pages"
+)
+CLI.add_argument(
+    '--environment-filter',
+    dest="environment_filter",
+    type=str,
+    required=False,
+    help="Filter by deployment environment"
+)
+CLI.add_argument(
+    '--project-filter',
+    dest="project_filter",
+    type=str,
+    required=False,
+    help="Filter by project's repo short link"
+)
+
 
 if __name__ == '__main__':
-    env_filter = None if len(sys.argv) < 2 else sys.argv[1]
+    options = CLI.parse_args(sys.argv[1:])
+
     with open('config.json', 'r') as fh:
         entries = json.load(fh)
 
@@ -34,6 +55,7 @@ if __name__ == '__main__':
         deployments += [
             dict(
                 name=s['system_name'],
+                repo=s['repo'],
                 env=d['name'],
                 ci_cd_url=f"{build_servers[d['name']]}/{s['group']}/{s['repo']}/commits/{d['branch']}",
                 build_status_image=f"{status_apis[d['name']]}/build/{s['group']}/{s['repo']}/{d['branch']}.svg",
@@ -44,9 +66,22 @@ if __name__ == '__main__':
                 metrics_emoji=random.choice(['📈', '📉', '📊']) if d.get('metrics_url') else '❌'
             ) for d in s['deployments']
         ]
-    if env_filter:
-        deployments = [d for d in deployments if d['env'] == env_filter]
+
+    title_parts = []
+    if options.project_filter:
+        deployments = [d for d in deployments if d['repo'] == options.project_filter]
+        title_parts.append(f"{options.project_filter} project")
+
+    if options.environment_filter:
+        deployments = [d for d in deployments if d['env'] == options.environment_filter]
+        title_parts.append(f"{options.environment_filter} deployment")
+
     template = Template(template_str)
-    print(template.render(environments=f"{env_filter} deployment" if env_filter else 'all deployments', headers=headers, deployments=deployments))
+    print(
+        template.render(
+            title=', '.join(title_parts) if len(title_parts) else 'all projects and deployments',
+            headers=headers, deployments=deployments
+        )
+    )
 
 

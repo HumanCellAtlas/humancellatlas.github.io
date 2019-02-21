@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HCA DCP: DCP Status</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- Gobal site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116656225-2"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-116656225-2', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+
+        var setDatetime = function() {
+            var n = new Date().toISOString();
+            document.getElementById("timestamp").innerText = n;
+        };
+
+        window.onload = setDatetime;
+
+        setInterval(function() {
+                window.location.reload();
+            },
+            2*60000
+        );
+    </script>
+</head>
+<body>
+<h1>Data Coordination Platform status: matrix-service project</h1>
+
+<table>
+    <thead>
+        
+            <tr>
+                
+                    <th>System Name</th>
+                
+                    <th>Deployment Stage</th>
+                
+                    <th>Build Status</th>
+                
+                    <th>Status</th>
+                
+                    <th>Availability (30 day)</th>
+                
+                    <th>Metrics</th>
+                
+            </tr>
+        
+    </thead>
+    <tbody>
+        
+            <tr>
+                <td><code>Matrix</code></td>
+                <td><code>dev</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/matrix-service/commits/master"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/matrix-service/master.svg" /></a></td>
+                <td><a href="https://matrix.dev.data.humancellatlas.org/internal/health"><img src="https://status.dev.data.humancellatlas.org/service/matrix-health-check-dev.svg" /></a></td>
+                <td><a href="https://matrix.dev.data.humancellatlas.org/internal/health"><img src="https://status.dev.data.humancellatlas.org/availability/matrix-health-check-dev.svg" /></a></td>
+                <td>
+                    
+                        <a href="https://metrics.dev.data.humancellatlas.org/d/matrix-dev">📊</a>
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Matrix</code></td>
+                <td><code>integration</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/matrix-service/commits/integration"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/matrix-service/integration.svg" /></a></td>
+                <td><a href="https://matrix.integration.data.humancellatlas.org/internal/health"><img src="https://status.dev.data.humancellatlas.org/service/matrix-health-check-integration.svg" /></a></td>
+                <td><a href="https://matrix.integration.data.humancellatlas.org/internal/health"><img src="https://status.dev.data.humancellatlas.org/availability/matrix-health-check-integration.svg" /></a></td>
+                <td>
+                    
+                        <a href="https://metrics.dev.data.humancellatlas.org/d/matrix-integration">📊</a>
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Matrix</code></td>
+                <td><code>staging</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/matrix-service/commits/staging"><img src="https://status.dev.data.humancellatlas.org/build/HumanCellAtlas/matrix-service/staging.svg" /></a></td>
+                <td><a href="https://matrix.staging.data.humancellatlas.org/internal/health"><img src="https://status.dev.data.humancellatlas.org/service/matrix-health-check-staging.svg" /></a></td>
+                <td><a href="https://matrix.staging.data.humancellatlas.org/internal/health"><img src="https://status.dev.data.humancellatlas.org/availability/matrix-health-check-staging.svg" /></a></td>
+                <td>
+                    
+                        <a href="https://metrics.dev.data.humancellatlas.org/d/matrix-staging">📊</a>
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>Matrix</code></td>
+                <td><code>prod</code></td>
+                <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/matrix-service/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/matrix-service/prod.svg" /></a></td>
+                <td><a href="https://matrix.data.humancellatlas.org/internal/health"><img src="https://status.data.humancellatlas.org/service/matrix-health-check-prod.svg" /></a></td>
+                <td><a href="https://matrix.data.humancellatlas.org/internal/health"><img src="https://status.data.humancellatlas.org/availability/matrix-health-check-prod.svg" /></a></td>
+                <td>
+                    
+                        <a href="https://metrics.data.humancellatlas.org/d/matrix-prod">📈</a>
+                    
+                </td>
+            </tr>
+        
+    </tbody>
+</table>
+
+<p><em>Last updated at <span id="timestamp">_</span>. Refreshing in two minutes…</em></p>
+
+</body>
+</html>
