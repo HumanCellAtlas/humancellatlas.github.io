@@ -4,6 +4,8 @@ import random
 import sys
 from jinja2 import Template
 
+random.seed(0)
+
 status_apis = {
     'dev': 'https://status.dev.data.humancellatlas.org',
     'integration': 'https://status.dev.data.humancellatlas.org',
