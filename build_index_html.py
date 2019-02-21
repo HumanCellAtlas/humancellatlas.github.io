@@ -50,39 +50,39 @@ if __name__ == '__main__':
         template_str = fh.read()
 
     headers = [
-        dict(cells=('System Name', 'Deployment Stage', 'Build Status', 'Status', 'Availability (30 day)', 'Metrics'))
+        dict(cells=('System Name', 'Environment', 'Build Status', 'Status', 'Availability (30 day)', 'Metrics'))
     ]
-    deployments = []
+    environments = []
     for s in entries['systems']:
-        deployments += [
+        environments += [
             dict(
                 name=s['system_name'],
                 repo=s['repo'],
-                env=d['name'],
-                ci_cd_url=f"{build_servers[d['name']]}/{s['group']}/{s['repo']}/commits/{d['branch']}",
-                build_status_image=f"{status_apis[d['name']]}/build/{s['group']}/{s['repo']}/{d['branch']}.svg",
-                health_check_endpoint=d['health_check_endpoint'],
-                metrics_url=d.get('metrics_url'),
-                system_status_image=f"{status_apis[d['name']]}/service/{d['health_check_id']}.svg",
-                availability_image=f"{status_apis[d['name']]}/availability/{d['health_check_id']}.svg",
-                metrics_emoji=random.choice(['📈', '📉', '📊']) if d.get('metrics_url') else '❌'
-            ) for d in s['deployments']
+                env=e['name'],
+                ci_cd_url=f"{build_servers[e['name']]}/{s['group']}/{s['repo']}/commits/{e['branch']}",
+                build_status_image=f"{status_apis[e['name']]}/build/{s['group']}/{s['repo']}/{e['branch']}.svg",
+                health_check_endpoint=e['health_check_endpoint'],
+                metrics_url=e.get('metrics_url'),
+                system_status_image=f"{status_apis[e['name']]}/service/{e['health_check_id']}.svg",
+                availability_image=f"{status_apis[e['name']]}/availability/{e['health_check_id']}.svg",
+                metrics_emoji=random.choice(['📈', '📉', '📊']) if e.get('metrics_url') else '❌'
+            ) for e in s['environments']
         ]
 
     title_parts = []
     if options.project_filter:
-        deployments = [d for d in deployments if d['repo'] == options.project_filter]
+        environments = [d for d in environments if d['repo'] == options.project_filter]
         title_parts.append(f"{options.project_filter} project")
 
     if options.environment_filter:
-        deployments = [d for d in deployments if d['env'] == options.environment_filter]
-        title_parts.append(f"{options.environment_filter} deployment")
+        environments = [d for d in environments if d['env'] == options.environment_filter]
+        title_parts.append(f"{options.environment_filter} environment")
 
     template = Template(template_str)
     print(
         template.render(
-            title=', '.join(title_parts) if len(title_parts) else 'all projects and deployments',
-            headers=headers, deployments=deployments
+            title=', '.join(title_parts) if len(title_parts) else 'all projects and environments',
+            headers=headers, deployments=environments
         )
     )
 

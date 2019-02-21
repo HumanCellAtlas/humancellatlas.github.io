@@ -4,7 +4,7 @@
       "system_name": "DCP",
       "group": "HumanCellAtlas",
       "repo": "dcp",
-      "deployments": [
+      "environments": [
         {
           "name": "integration",
           "branch": "integration",
@@ -35,7 +35,7 @@
       "system_name": "Ingest",
       "group": "HumanCellAtlas",
       "repo": "ingest-core",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": null,
@@ -74,7 +74,7 @@
       "system_name": "Upload",
       "group": "HumanCellAtlas",
       "repo": "upload-service",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "master",
@@ -113,7 +113,7 @@
       "system_name": "Data Storage",
       "group": "HumanCellAtlas",
       "repo": "data-store",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "master",
@@ -152,7 +152,7 @@
       "system_name": "Analysis (Lira)",
       "group": "HumanCellAtlas",
       "repo": "lira",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "master",
@@ -191,7 +191,7 @@
       "system_name": "Data Portal",
       "group": "HumanCellAtlas",
       "repo": "data-portal",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "develop",
@@ -230,7 +230,7 @@
       "system_name": "Data Browser",
       "group": "HumanCellAtlas",
       "repo": "data-browser",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "develop",
@@ -269,7 +269,7 @@
       "system_name": "Matrix",
       "group": "HumanCellAtlas",
       "repo": "matrix-service",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "master",
@@ -308,7 +308,7 @@
       "system_name": "Metrics",
       "group": "HumanCellAtlas",
       "repo": "metrics",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "master",
@@ -331,7 +331,7 @@
       "system_name": "Logs",
       "group": "HumanCellAtlas",
       "repo": "logs",
-      "deployments": [
+      "environments": [
         {
           "name": "dev",
           "branch": "master",
