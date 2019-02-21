@@ -93,7 +93,7 @@ if __name__ == '__main__':
     template = Template(template_str)
     print(
         template.render(
-            title=', '.join(title_parts) if len(title_parts) else '*',
+            title=(": " + ', '.join(title_parts)) if len(title_parts) > 0 else '',
             headers=headers, rows=rows
         )
     )

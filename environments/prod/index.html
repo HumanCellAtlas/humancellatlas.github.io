@@ -31,173 +31,120 @@
     </script>
 </head>
 <body>
-<h1>Data Coordination Platform status: <em>prod environment</em></h1>
+<h1>Data Coordination Platform status: prod environment</h1>
 
 <table>
     <thead>
-        
-            <tr>
-                
-                    <th>System Name</th>
-                
-                    <th>Environment</th>
-                
-                    <th>Build Status</th>
-                
-                    <th>Status</th>
-                
-                    <th>Availability (30 day)</th>
-                
-                    <th>Metrics</th>
-                
+        <tr>
+                <th>System Name</th><th>Environment</th><th>Build Status</th><th>Status</th><th>Availability (30 day)</th><th>Metrics</th>
             </tr>
-        
     </thead>
     <tbody>
-        
-            <tr>
+        <tr>
                 <td><code>DCP</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/dcp/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/dcp/prod.svg" /></a></td>
                 <td><a href="None"><img src="https://status.data.humancellatlas.org/service/None.svg" /></a></td>
                 <td><a href="None"><img src="https://status.data.humancellatlas.org/availability/None.svg" /></a></td>
-                <td>
-                    
-                        <a href="https://metrics.data.humancellatlas.org/d/account-prod/account-status-hca-prod">📈</a>
-                    
+                <td><a href="https://metrics.data.humancellatlas.org/d/account-prod/account-status-hca-prod">📈</a>
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Metadata Schema</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/metadata-schema/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/metadata-schema/master.svg" /></a></td>
                 <td><a href="https://schema.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/service/metadata-schema-health-check-prod.svg" /></a></td>
                 <td><a href="https://schema.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/availability/metadata-schema-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td>❌
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Ingest</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/ingest-core/commits/None"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/ingest-core/None.svg" /></a></td>
                 <td><a href="http://api.ingest.data.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/service/ingest-health-check-prod.svg" /></a></td>
                 <td><a href="http://api.ingest.data.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/availability/ingest-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td>❌
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Upload</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/upload-service/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/upload-service/prod.svg" /></a></td>
                 <td><a href="https://upload.data.humancellatlas.org/v1/health"><img src="https://status.data.humancellatlas.org/service/upload-health-check-prod.svg" /></a></td>
                 <td><a href="https://upload.data.humancellatlas.org/v1/health"><img src="https://status.data.humancellatlas.org/availability/upload-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        <a href="https://metrics.data.humancellatlas.org/d/upload-prod">📉</a>
-                    
+                <td><a href="https://metrics.data.humancellatlas.org/d/upload-prod">📉</a>
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Data Storage</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/data-store/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/data-store/prod.svg" /></a></td>
                 <td><a href="https://dss.data.humancellatlas.org/internal/health"><img src="https://status.data.humancellatlas.org/service/dss-health-check-prod.svg" /></a></td>
                 <td><a href="https://dss.data.humancellatlas.org/internal/health"><img src="https://status.data.humancellatlas.org/availability/dss-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        <a href="https://metrics.data.humancellatlas.org/d/dss-prod">📊</a>
-                    
+                <td><a href="https://metrics.data.humancellatlas.org/d/dss-prod">📊</a>
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Analysis (Lira)</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/lira/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/lira/master.svg" /></a></td>
                 <td><a href="https://pipelines.data.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/service/analysis-health-check-prod.svg" /></a></td>
                 <td><a href="https://pipelines.data.humancellatlas.org/health"><img src="https://status.data.humancellatlas.org/availability/analysis-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td>❌
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
+                <td><code>Azul Indexer</code></td>
+                <td><code>prod</code></td>
+                <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/azul/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/azul/master.svg" /></a></td>
+                <td><a href="https://prod.data.humancellatlas.org/health/"><img src="https://status.data.humancellatlas.org/service/azul-indexer-health-check-prod.svg" /></a></td>
+                <td><a href="https://prod.data.humancellatlas.org/health/"><img src="https://status.data.humancellatlas.org/availability/azul-indexer-health-check-prod.svg" /></a></td>
+                <td><a href="https://metrics.data.humancellatlas.org/d/dcp-health-prod">📊</a>
+                </td>
+            </tr><tr>
+                <td><code>Azul Webservice</code></td>
+                <td><code>prod</code></td>
+                <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/azul/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/azul/master.svg" /></a></td>
+                <td><a href="https://prod.data.humancellatlas.org/health/"><img src="https://status.data.humancellatlas.org/service/azul-webservice-health-check-prod.svg" /></a></td>
+                <td><a href="https://prod.data.humancellatlas.org/health/"><img src="https://status.data.humancellatlas.org/availability/azul-webservice-health-check-prod.svg" /></a></td>
+                <td><a href="https://metrics.data.humancellatlas.org/d/dcp-health-prod">📊</a>
+                </td>
+            </tr><tr>
                 <td><code>Data Portal</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/data-portal/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/data-portal/master.svg" /></a></td>
                 <td><a href="https://prod.data.humancellatlas.org/health/"><img src="https://status.data.humancellatlas.org/service/None.svg" /></a></td>
                 <td><a href="https://prod.data.humancellatlas.org/health/"><img src="https://status.data.humancellatlas.org/availability/None.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td>❌
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Data Browser</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/data-browser/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/data-browser/master.svg" /></a></td>
-                <td><a href="None"><img src="https://status.data.humancellatlas.org/service/None.svg" /></a></td>
-                <td><a href="None"><img src="https://status.data.humancellatlas.org/availability/None.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td><a href="None"><img src="https://status.data.humancellatlas.org/service/data-browser-health-check-prod.svg" /></a></td>
+                <td><a href="None"><img src="https://status.data.humancellatlas.org/availability/data-browser-health-check-prod.svg" /></a></td>
+                <td>❌
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Matrix</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/matrix-service/commits/prod"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/matrix-service/prod.svg" /></a></td>
                 <td><a href="https://matrix.data.humancellatlas.org/internal/health"><img src="https://status.data.humancellatlas.org/service/matrix-health-check-prod.svg" /></a></td>
                 <td><a href="https://matrix.data.humancellatlas.org/internal/health"><img src="https://status.data.humancellatlas.org/availability/matrix-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        <a href="https://metrics.data.humancellatlas.org/d/matrix-prod">📊</a>
-                    
+                <td><a href="https://metrics.data.humancellatlas.org/d/matrix-prod">📊</a>
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Metrics</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/metrics/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/metrics/master.svg" /></a></td>
                 <td><a href="https://metrics.data.humancellatlas.org/api/health"><img src="https://status.data.humancellatlas.org/service/metrics-health-check-prod.svg" /></a></td>
                 <td><a href="https://metrics.data.humancellatlas.org/api/health"><img src="https://status.data.humancellatlas.org/availability/metrics-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td>❌
                 </td>
-            </tr>
-        
-            <tr>
+            </tr><tr>
                 <td><code>Logs</code></td>
                 <td><code>prod</code></td>
                 <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/logs/commits/master"><img src="https://status.data.humancellatlas.org/build/HumanCellAtlas/logs/master.svg" /></a></td>
                 <td><a href="https://logs.data.humancellatlas.org/-/health"><img src="https://status.data.humancellatlas.org/service/logs-health-check-prod.svg" /></a></td>
                 <td><a href="https://logs.data.humancellatlas.org/-/health"><img src="https://status.data.humancellatlas.org/availability/logs-health-check-prod.svg" /></a></td>
-                <td>
-                    
-                        ❌
-                    
+                <td>❌
                 </td>
             </tr>
-        
     </tbody>
 </table>
 

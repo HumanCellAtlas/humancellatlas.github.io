@@ -31,20 +31,20 @@
     </script>
 </head>
 <body>
-<h1>Data Coordination Platform status: <em>{{ title }}</em></h1>
+<h1>Data Coordination Platform status{{ title }}</h1>
 
 <table>
     <thead>
-        {% for h in headers %}
+        {% for h in headers -%}
             <tr>
-                {% for cell in h.cells %}
+                {% for cell in h.cells -%}
                     <th>{{ cell }}</th>
-                {% endfor %}
+                {%- endfor %}
             </tr>
-        {% endfor %}
+        {%- endfor %}
     </thead>
     <tbody>
-        {% for d in rows %}
+        {% for d in rows -%}
             <tr>
                 <td><code>{{ d.name }}</code></td>
                 <td><code>{{ d.env }}</code></td>
@@ -52,14 +52,14 @@
                 <td><a href="{{ d.health_check_endpoint }}"><img src="{{ d.system_status_image }}" /></a></td>
                 <td><a href="{{ d.health_check_endpoint }}"><img src="{{ d.availability_image }}" /></a></td>
                 <td>
-                    {% if d.metrics_url %}
+                    {%- if d.metrics_url -%}
                         <a href="{{ d.metrics_url }}">{{ d.metrics_emoji }}</a>
-                    {% else %}
+                    {%- else -%}
                         {{ d.metrics_emoji }}
-                    {% endif %}
+                    {%- endif %}
                 </td>
             </tr>
-        {% endfor %}
+        {%- endfor %}
     </tbody>
 </table>
 
