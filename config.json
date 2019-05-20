@@ -51,29 +51,29 @@
     {
       "system_name": "Ingest",
       "group": "HumanCellAtlas",
-      "repo": "ingest-core",
+      "repo": "ingest-integration-tests",
       "owner": "ebi",
       "environments": [
         {
           "name": "dev",
-          "branch": null,
-          "ci_cd_server": null,
+          "branch": "dev",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
           "health_check_endpoint": "http://api.ingest.dev.data.humancellatlas.org/health",
           "metrics_url": null,
           "health_check_id": "ingest-health-check-dev"
         },
         {
           "name": "integration",
-          "branch": null,
-          "ci_cd_server": null,
+          "branch": "integration",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
           "health_check_endpoint": "http://api.ingest.integration.data.humancellatlas.org/health",
           "metrics_url": null,
           "health_check_id": "ingest-health-check-integration"
         },
         {
           "name": "staging",
-          "branch": null,
-          "ci_cd_server": null,
+          "branch": "staging",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
           "health_check_endpoint": "http://api.ingest.staging.data.humancellatlas.org/health",
           "metrics_url": null,
           "health_check_id": "ingest-health-check-staging"
