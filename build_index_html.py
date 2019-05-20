@@ -68,7 +68,7 @@ if __name__ == '__main__':
                 env=e['name'],
                 owner=s['owner'],
                 ci_cd_url=f"{build_servers[e['name']]}/{s['group']}/{s['repo']}/commits/{e['branch']}",
-                build_status_image=f"{status_apis[e['name']]}/build/{s['group']}/{s['repo']}/{e['branch']}.svg",
+                build_status_image=f"{build_servers[e['name']]}/{s['group']}/{s['repo']}/badges/{e['branch']}/pipeline.svg",
                 health_check_endpoint=e['health_check_endpoint'],
                 metrics_url=e.get('metrics_url'),
                 system_status_image=f"{status_apis[e['name']]}/service/{e['health_check_id']}.svg",
