@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HCA DCP: DCP Status</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- Gobal site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116656225-2"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-116656225-2', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+
+        var setDatetime = function() {
+            var n = new Date().toISOString();
+            document.getElementById("timestamp").innerText = n;
+        };
+
+        window.onload = setDatetime;
+
+        setInterval(function() {
+                window.location.reload();
+            },
+            2*60000
+        );
+    </script>
+</head>
+<body>
+<h1>Data Coordination Platform status: fusillade project</h1>
+
+<table>
+    <thead>
+        <tr>
+                <th>System Name</th><th>Environment</th><th>Build Status</th><th>Status</th><th>Availability (30 day)</th><th>Metrics</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+                <td><code>Auth</code></td>
+                <td><code>dev</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/fusillade/commits/dev"><img src="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/fusillade/badges/dev/pipeline.svg" /></a></td>
+                <td><a href="None"><img src="https://status.dev.data.humancellatlas.org/service/auth-health-check-integration.svg" /></a></td>
+                <td><a href="None"><img src="https://status.dev.data.humancellatlas.org/availability/auth-health-check-integration.svg" /></a></td>
+                <td>❌
+                </td>
+            </tr><tr>
+                <td><code>Auth</code></td>
+                <td><code>integration</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/fusillade/commits/integration"><img src="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/fusillade/badges/integration/pipeline.svg" /></a></td>
+                <td><a href="None"><img src="https://status.dev.data.humancellatlas.org/service/auth-health-check-integration.svg" /></a></td>
+                <td><a href="None"><img src="https://status.dev.data.humancellatlas.org/availability/auth-health-check-integration.svg" /></a></td>
+                <td>❌
+                </td>
+            </tr><tr>
+                <td><code>Auth</code></td>
+                <td><code>staging</code></td>
+                <td><a href="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/fusillade/commits/staging"><img src="https://allspark.dev.data.humancellatlas.org/HumanCellAtlas/fusillade/badges/staging/pipeline.svg" /></a></td>
+                <td><a href="None"><img src="https://status.dev.data.humancellatlas.org/service/auth-health-check-staging.svg" /></a></td>
+                <td><a href="None"><img src="https://status.dev.data.humancellatlas.org/availability/auth-health-check-staging.svg" /></a></td>
+                <td>❌
+                </td>
+            </tr><tr>
+                <td><code>Auth</code></td>
+                <td><code>prod</code></td>
+                <td><a href="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/fusillade/commits/prod"><img src="https://allspark-prod.data.humancellatlas.org/HumanCellAtlas/fusillade/badges/prod/pipeline.svg" /></a></td>
+                <td><a href="None"><img src="https://status.data.humancellatlas.org/service/auth-health-check-prod.svg" /></a></td>
+                <td><a href="None"><img src="https://status.data.humancellatlas.org/availability/auth-health-check-prod.svg" /></a></td>
+                <td>❌
+                </td>
+            </tr>
+    </tbody>
+</table>
+
+<p><em>Last updated at <span id="timestamp">_</span>. Refreshing in two minutes…</em></p>
+
+</body>
+</html>

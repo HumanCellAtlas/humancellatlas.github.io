@@ -33,6 +33,46 @@
       ]
     },
     {
+      "system_name": "Auth",
+      "group": "HumanCellAtlas",
+      "repo": "fusillade",
+      "owner": "czi",
+      "environments": [
+        {
+          "name": "dev",
+          "branch": "dev",
+          "health_check_endpoint": null,
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "metrics_url": null,
+          "health_check_id": "auth-health-check-integration"
+        },
+        {
+          "name": "integration",
+          "branch": "integration",
+          "health_check_endpoint": null,
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "metrics_url": null,
+          "health_check_id": "auth-health-check-integration"
+        },
+        {
+          "name": "staging",
+          "branch": "staging",
+          "health_check_endpoint": null,
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "metrics_url": null,
+          "health_check_id": "auth-health-check-staging"
+        },
+        {
+          "name": "prod",
+          "branch": "prod",
+          "health_check_endpoint": null,
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "metrics_url": null,
+          "health_check_id": "auth-health-check-prod"
+        }
+      ]
+    },
+    {
       "system_name": "Metadata Schema",
       "group": "HumanCellAtlas",
       "repo": "metadata-schema",
