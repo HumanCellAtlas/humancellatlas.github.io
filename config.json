@@ -443,7 +443,7 @@
           "branch": "master",
           "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
           "health_check_endpoint": "https://logs.dev.data.humancellatlas.org/-/health",
-          "metrics_url": null,
+          "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/logs-hca/logs-hca",
           "health_check_id": "logs-health-check-dev"
         },
         {
@@ -451,7 +451,7 @@
           "branch": "master",
           "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
           "health_check_endpoint": "https://logs.data.humancellatlas.org/-/health",
-          "metrics_url": null,
+          "metrics_url": "https://metrics.data.humancellatlas.org/d/logs-hca-prod/logs-hca-prod",
           "health_check_id": "logs-health-check-prod"
         }
       ]
