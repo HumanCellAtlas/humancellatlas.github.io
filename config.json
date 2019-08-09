@@ -10,7 +10,7 @@
           "name": "integration",
           "branch": "integration",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/LrYJeR2iz/dev-account-status",
           "health_check_id": "dcp-health-check-integration"
         },
@@ -18,7 +18,7 @@
           "name": "staging",
           "branch": "staging",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/LrYJeR2iz/dev-account-status",
           "health_check_id": "dcp-health-check-staging"
         },
@@ -26,7 +26,7 @@
           "name": "prod",
           "branch": "prod",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/account-prod/account-status-hca-prod",
           "health_check_id": "dcp-health-check-prod"
         }
@@ -42,7 +42,7 @@
           "name": "dev",
           "branch": "dev",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "metrics_url": null,
           "health_check_id": "auth-health-check-integration"
         },
@@ -50,7 +50,7 @@
           "name": "integration",
           "branch": "integration",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "metrics_url": null,
           "health_check_id": "auth-health-check-integration"
         },
@@ -58,7 +58,7 @@
           "name": "staging",
           "branch": "staging",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "metrics_url": null,
           "health_check_id": "auth-health-check-staging"
         },
@@ -66,7 +66,7 @@
           "name": "prod",
           "branch": "prod",
           "health_check_endpoint": null,
-          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "metrics_url": null,
           "health_check_id": "auth-health-check-prod"
         }
@@ -97,7 +97,7 @@
         {
           "name": "dev",
           "branch": "dev",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "http://api.ingest.dev.data.humancellatlas.org/health",
           "metrics_url": null,
           "health_check_id": "ingest-health-check-dev"
@@ -105,7 +105,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "http://api.ingest.integration.data.humancellatlas.org/health",
           "metrics_url": null,
           "health_check_id": "ingest-health-check-integration"
@@ -113,7 +113,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "http://api.ingest.staging.data.humancellatlas.org/health",
           "metrics_url": null,
           "health_check_id": "ingest-health-check-staging"
@@ -137,7 +137,7 @@
         {
           "name": "dev",
           "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://upload.dev.data.humancellatlas.org/v1/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/upload-dev",
           "health_check_id": "upload-health-check-dev"
@@ -145,7 +145,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://upload.integration.data.humancellatlas.org/v1/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/upload-integration",
           "health_check_id": "upload-health-check-integration"
@@ -153,7 +153,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://upload.staging.data.humancellatlas.org/v1/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/upload-staging",
           "health_check_id": "upload-health-check-staging"
@@ -161,7 +161,7 @@
         {
           "name": "prod",
           "branch": "prod",
-          "ci_cd_server": "https://allspark-prod.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.data.humancellatlas.org",
           "health_check_endpoint": "https://upload.data.humancellatlas.org/v1/health",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/upload-prod",
           "health_check_id": "upload-health-check-prod"
@@ -177,7 +177,7 @@
         {
           "name": "dev",
           "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://dss.dev.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/dss-dev",
           "health_check_id": "dss-health-check-dev"
@@ -185,7 +185,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://dss.integration.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/dss-integration",
           "health_check_id": "dss-health-check-integration"
@@ -193,7 +193,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://dss.staging.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/dss-staging",
           "health_check_id": "dss-health-check-staging"
@@ -201,7 +201,7 @@
         {
           "name": "prod",
           "branch": "prod",
-          "ci_cd_server": "https://allspark-prod.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.data.humancellatlas.org",
           "health_check_endpoint": "https://dss.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/dss-prod",
           "health_check_id": "dss-health-check-prod"
@@ -209,39 +209,39 @@
       ]
     },
     {
-      "system_name": "Analysis (Lira)",
+      "system_name": "Analysis",
       "group": "HumanCellAtlas",
-      "repo": "lira",
+      "repo": "secondary-analysis-deploy",
       "owner": "broad",
       "environments": [
         {
           "name": "dev",
-          "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "branch": "dev",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://pipelines.dev.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/analysis-dev",
           "health_check_id": "analysis-health-check-dev"
         },
         {
           "name": "integration",
-          "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "branch": "integration",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://pipelines.integration.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/analysis-integration",
           "health_check_id": "analysis-health-check-integration"
         },
         {
           "name": "staging",
-          "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "branch": "staging",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://pipelines.staging.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/analysis-staging",
           "health_check_id": "analysis-health-check-staging"
         },
         {
           "name": "prod",
-          "branch": "master",
-          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "branch": "prod",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://pipelines.data.humancellatlas.org/health",
           "metric_url": "https://metrics.data.humancellatlas.org/d/analysis-prod",
           "health_check_id": "analysis-health-check-prod"
@@ -257,7 +257,7 @@
         {
           "name": "dev",
           "branch": "develop",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://service.dev.explore.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/azul-dev",
           "health_check_id": "azul-service-dev"
@@ -265,7 +265,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://service.integration.explore.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/azul-integration",
           "health_check_id": "azul-service-integration"
@@ -273,7 +273,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://service.staging.explore.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/azul-staging",
           "health_check_id": "azul-service-staging"
@@ -281,7 +281,7 @@
         {
           "name": "prod",
           "branch": "master",
-          "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://service.explore.data.humancellatlas.org/health",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/azul-prod",
           "health_check_id": "azul-service-prod"
@@ -297,7 +297,7 @@
         {
           "name": "dev",
           "branch": "develop",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://dev.data.humancellatlas.org/health/",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/data-portal-dev",
           "health_check_id": "azul-data-portal-dev"
@@ -305,7 +305,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://integration.data.humancellatlas.org/health/",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/data-portal-integration",
           "health_check_id": "azul-data-portal-integration"
@@ -313,7 +313,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://staging.data.humancellatlas.org/health/",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/data-portal-staging",
           "health_check_id": "azul-data-portal-staging"
@@ -321,7 +321,7 @@
         {
           "name": "prod",
           "branch": "master",
-          "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://prod.data.humancellatlas.org/health/",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/data-portal-portal-prod",
           "health_check_id": "azul-data-portal-prod"
@@ -337,7 +337,7 @@
         {
           "name": "dev",
           "branch": "develop",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://dev.data.humancellatlas.org/explore",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/data-portal-dev",
           "health_check_id": "azul-data-browser-dev"
@@ -345,7 +345,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://integration.data.humancellatlas.org/explore",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/data-portal-integration",
           "health_check_id": "azul-data-browser-integration"
@@ -353,7 +353,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://staging.data.humancellatlas.org/explore",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/data-portal-staging",
           "health_check_id": "azul-data-browser-staging"
@@ -361,7 +361,7 @@
         {
           "name": "prod",
           "branch": "master",
-          "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://prod.data.humancellatlas.org/explore",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/data-portal-prod",
           "health_check_id": "azul-data-browser-prod"
@@ -377,7 +377,7 @@
         {
           "name": "dev",
           "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://matrix.dev.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/matrix-dev",
           "health_check_id": "matrix-health-check-dev"
@@ -385,7 +385,7 @@
         {
           "name": "integration",
           "branch": "integration",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://matrix.integration.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/matrix-integration",
           "health_check_id": "matrix-health-check-integration"
@@ -393,7 +393,7 @@
         {
           "name": "staging",
           "branch": "staging",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://matrix.staging.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/matrix-staging",
           "health_check_id": "matrix-health-check-staging"
@@ -401,7 +401,7 @@
         {
           "name": "prod",
           "branch": "prod",
-          "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://matrix.data.humancellatlas.org/internal/health",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/matrix-prod",
           "health_check_id": "matrix-health-check-prod"
@@ -417,7 +417,7 @@
         {
           "name": "dev",
           "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://metrics.dev.data.humancellatlas.org/api/health",
           "metrics_url": null,
           "health_check_id": "metrics-health-check-dev"
@@ -425,7 +425,7 @@
         {
           "name": "prod",
           "branch": "master",
-          "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://metrics.data.humancellatlas.org/api/health",
           "metrics_url": null,
           "health_check_id": "metrics-health-check-prod"
@@ -441,7 +441,7 @@
         {
           "name": "dev",
           "branch": "master",
-          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://logs.dev.data.humancellatlas.org/-/health",
           "metrics_url": "https://metrics.dev.data.humancellatlas.org/d/logs-hca/logs-hca",
           "health_check_id": "logs-health-check-dev"
@@ -449,7 +449,7 @@
         {
           "name": "prod",
           "branch": "master",
-          "ci_cd_link": "https://allspark-prod.dev.data.humancellatlas.org/",
+          "ci_cd_server": "https://allspark-prod.dev.data.humancellatlas.org",
           "health_check_endpoint": "https://logs.data.humancellatlas.org/-/health",
           "metrics_url": "https://metrics.data.humancellatlas.org/d/logs-hca-prod/logs-hca-prod",
           "health_check_id": "logs-health-check-prod"

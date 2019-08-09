@@ -13,13 +13,6 @@ status_apis = {
     'prod': 'https://status.data.humancellatlas.org',
 }
 
-build_servers = {
-    'dev': 'https://allspark.dev.data.humancellatlas.org',
-    'integration': 'https://allspark.dev.data.humancellatlas.org',
-    'staging': 'https://allspark.dev.data.humancellatlas.org',
-    'prod': 'https://allspark-prod.data.humancellatlas.org',
-}
-
 NAME = sys.argv[0].split('/')[-1]
 CLI = argparse.ArgumentParser(
     description=f"`{NAME}` is a tool for generating HCA DCP status pages"
@@ -67,8 +60,8 @@ if __name__ == '__main__':
                 repo=s['repo'],
                 env=e['name'],
                 owner=s['owner'],
-                ci_cd_url=f"{build_servers[e['name']]}/{s['group']}/{s['repo']}/commits/{e['branch']}",
-                build_status_image=f"{build_servers[e['name']]}/{s['group']}/{s['repo']}/badges/{e['branch']}/pipeline.svg",
+                ci_cd_url=f"{e['ci_cd_server']}/{s['group']}/{s['repo']}/commits/{e['branch']}",
+                build_status_image=f"{e['ci_cd_server']}/{s['group']}/{s['repo']}/badges/{e['branch']}/pipeline.svg",
                 health_check_endpoint=e['health_check_endpoint'],
                 metrics_url=e.get('metrics_url'),
                 system_status_image=f"{status_apis[e['name']]}/service/{e['health_check_id']}.svg",
